@@ -1,0 +1,22 @@
+{
+
+  "description": "Adds a BandCamp download link to tracks in NTS playlists, where possible",
+  "manifest_version": 2,
+  "name": "NTSxBandcamp",
+  "version": "1.0",
+  "homepage_url": "https://github.com/Jim-Walk",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "webRequest", "https://bandcamp.com/*", "https://nts.live/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.nts.live/*"],
+      "js": ["bc-urls.js", "purify.min.js"]
+    }
+  ]
+
+}
