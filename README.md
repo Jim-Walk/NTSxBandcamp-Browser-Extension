@@ -6,6 +6,6 @@ Thanks to cure53 for [DOMpurify](https://github.com/cure53/DOMPurify). This exte
 
 ## TODO
 
-[] Use BandCamp icon for link
-[] Figure out how to properly require purify
-[] Submit Extension
+- [ ] Use BandCamp icon for link
+- [ ] Figure out how to properly require purify
+- [ ] Submit Extension
