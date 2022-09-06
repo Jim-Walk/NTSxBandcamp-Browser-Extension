@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "name": "NTSxBandcamp",
   "version": "1.0",
-  "homepage_url": "https://github.com/Jim-Walk",
+  "homepage_url": "https://github.com/Jim-Walk/NTSxBandcamp-Browser-Extension",
   "icons": {
     "48": "icons/border-48.png"
   },
