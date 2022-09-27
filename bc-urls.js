@@ -23,9 +23,9 @@ function getBCItemLink (url, currentTrack) {
         const bcItemLink = bcDOM.querySelector('.itemurl')
         const bcNode = document.createElement('a')
         bcNode.setAttribute('href', bcItemLink.innerText)
-        bcNode.innerText = 'BandCamp Link'
+        bcNode.innerHTML = '<img src="icons/bc_log.svg" alt="Link to Bandcamp">'
         console.log(bcItemLink)
-        
+
         currentTrack.appendChild(bcNode)
         console.log(bcNode.innerHTML)
       } else {
