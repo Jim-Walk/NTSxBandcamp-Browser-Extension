@@ -21,9 +21,18 @@ function getBCItemLink (url, currentTrack) {
         const bcDOM = domParser.parseFromString(bcHTML, 'text/html')
 
         const bcItemLink = bcDOM.querySelector('.itemurl')
+
+        const bcImg = document.createElement('img')
+        const bcImgURL = browser.runtime.getURL('icons/bc_log.svg')
+        bcImg.setAttribute('src', bcImgURL)
+        bcImg.setAttribute('alt', 'link to bandcamp')
+        bcImg.style.height = '.75em'
+        bcImg.style.float = 'inherit'
+        bcImg.style.marginLeft = '10px'
+
         const bcNode = document.createElement('a')
         bcNode.setAttribute('href', bcItemLink.innerText)
-        bcNode.innerHTML = '<img src="icons/bc_log.svg" alt="Link to Bandcamp">'
+        bcNode.appendChild(bcImg)
         console.log(bcItemLink)
 
         currentTrack.appendChild(bcNode)
