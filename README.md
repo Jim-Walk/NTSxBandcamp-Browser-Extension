@@ -6,6 +6,9 @@ Thanks to cure53 for [DOMpurify](https://github.com/cure53/DOMPurify). This exte
 
 ## TODO
 
-- [ ] Use BandCamp icon for link
+- [x] Use BandCamp icon for link
 - [ ] Figure out how to properly require purify
 - [ ] Submit Extension
+- [ ] Receive Feedback
+- [ ] Create option to open search page rather than linking directly
+- [ ] Make compatible with Chrome
