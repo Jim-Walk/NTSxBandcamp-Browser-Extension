@@ -9,7 +9,8 @@
     "48": "icons/bc_log.svg"
   },
   "web_accessible_resources": [{
-    "resources": "icons/bc_log.svg"
+    "resources": ["icons/bc_log.svg"],
+    "matches": ["https://nts.live/*"]
   }],
   "permissions": [
     "webRequest"
@@ -21,7 +22,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.nts.live/*"],
-      "js": ["bc-urls.js", "purify.min.js"]
+      "js": ["purify.min.js", "bc-urls.js"]
     }
   ]
 

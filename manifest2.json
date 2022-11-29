@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.nts.live/*"],
-      "js": ["bc-urls.js", "purify.min.js"]
+      "js": ["purify.min.js", "bc-urls.js"]
     }
   ]
 

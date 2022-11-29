@@ -1,8 +1,3 @@
-try {
-  const DOMPurify = require('purify.min.js')
-} catch (error) {
-  console.error(error)
-}
 document.body.style.border = '5px solid red'
 
 console.log('Script loaded, writing to console')
@@ -23,7 +18,7 @@ function getBCItemLink (url, currentTrack) {
         const bcItemLink = bcDOM.querySelector('.itemurl')
 
         const bcImg = document.createElement('img')
-        const bcImgURL = browser.runtime.getURL('icons/bc_log.svg')
+        const bcImgURL = chrome.runtime.getURL('icons/bc_log.svg')
         bcImg.setAttribute('src', bcImgURL)
         bcImg.setAttribute('alt', 'link to bandcamp')
         bcImg.style.height = '.75em'
