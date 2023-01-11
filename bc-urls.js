@@ -1,5 +1,3 @@
-document.body.style.border = '5px solid red'
-
 console.log('Script loaded, writing to console')
 const trs = document.querySelectorAll('.track')
 const titles = document.querySelectorAll('.track__title')

@@ -3,14 +3,16 @@
   "description": "Adds a BandCamp download link to tracks in NTS playlists, where possible",
   "manifest_version": 3,
   "name": "NTSxBandcamp",
-  "version": "1.0",
+  "version": "1.01",
   "homepage_url": "https://github.com/Jim-Walk/NTSxBandcamp-Browser-Extension",
   "icons": {
-    "48": "icons/bc_log.svg"
+    "48": "icons/bc_logo48.png",
+    "128": "icons/extension_log.png"
   },
   "web_accessible_resources": [{
-    "resources": ["icons/bc_log.svg"],
-    "matches": ["https://nts.live/*"]
+    "resources": ["icons/bc_logo128.png"],
+    "matches": ["https://bandcamp.com/*", "https://nts.live/*"]
+
   }],
   "permissions": [
     "webRequest"
