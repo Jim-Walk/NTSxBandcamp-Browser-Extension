@@ -6,7 +6,7 @@
   "version": "1.1",
   "homepage_url": "https://github.com/Jim-Walk/NTSxBandcamp-Browser-Extension",
   "icons": {
-    "48": "icons/bc_log.svg"
+    "64": "icons/extension_log.png"
   },
   "web_accessible_resources": [
     "icons/bc_log.svg"
